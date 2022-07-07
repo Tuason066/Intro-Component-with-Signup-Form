@@ -1,0 +1,8 @@
+/* CODED BY: JEFFREY TUASON */
+
+.custom-shadow-black {
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.custom-shadow-green {
+    box-shadow: 0 3px 0 hsl(154, 56%, 46%);
+}

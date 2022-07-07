@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
+  <!-- script -->
+  <script src="./script.js" defer></script>
+  <!-- CODED BY: JEFFREY TUASON -->
+</head>
+<body class="min-h-screen md:grid md:place-items-center max-w-[1440px] md:text-base py-16 font-poppins text-sm text-body bg-red bg-mobile sm:bg-desktop bg-center bg-no-x sm:bg-desktop bg-center bg-no-x">
+
+  <main class="md:flex md:items-center md:justify-center md:gap-12 text-center w-11/12 mx-auto">
+    <!-- header -->
+    <div class="md:text-left max-w-lg">
+      <h1 class="md:w-full md:text-5xl mb-4 text-white text-2xl font-bold w-4/5 mx-auto">Learn to code by watching others</h1>
+      <p class="mb-12 opacity-75">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+    </div>
+    <!-- card -->
+    <div>
+      <!-- offer -->
+      <div class="md:mb-6 md:p-6 mb-4 p-4 bg-blue-100 rounded custom-shadow-black">
+        <p class="md:text-sm md:w-full text-xs leading-5 w-3/6 mx-auto"><span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <form id="form" class="bg-white rounded p-8 custom-shadow-black">
+        <!-- input field -->
+        <div id="input-fields" class="md:mb-4 mb-3">
+          <div id="container" class="input-container">
+            <div class="pr-4 font-"><input id="first-name" class="input-field" type="text" placeholder="First Name"></div>
+            <img id="icon" class="hidden max-w-max w-full" src="./images/icon-error.svg" alt="error icon">
+          </div>
+          <p id="error" class="error-message"></p>
+        </div>
+        <!-- end of input field -->
+        <!-- input field -->
+        <div id="input-fields" class="md:mb-4 mb-3">
+          <div id="container" class="input-container">
+            <div class="pr-4 font-"><input id="last-name" class="input-field" type="text" placeholder="Last Name"></div>
+            <img id="icon" class="hidden max-w-max w-full" src="./images/icon-error.svg" alt="error icon">
+          </div>
+          <p id="error" class="error-message"></p>
+        </div>
+        <!-- end of input field -->
+        <!-- input field -->
+        <div id="input-fields" class="md:mb-4 mb-3">
+          <div id="container" class="input-container">
+            <div class="pr-4 font-"><input id="email" class="input-field" type="text" placeholder="Email Address"></div>
+            <img id="icon" class="hidden max-w-max w-full" src="./images/icon-error.svg" alt="error icon">
+          </div>
+          <p id="error" class="error-message"></p>
+        </div>
+        <!-- end of input field -->
+        <!-- input field -->
+        <div id="input-fields" class="md:mb-4 mb-3">
+          <div id="container" class="input-container">
+            <div class="pr-4 font-"><input id="password" class="input-field" type="password" placeholder="Password"></div>
+            <img id="icon" class="hidden max-w-max w-full" src="./images/icon-error.svg" alt="error icon">
+          </div>
+          <p id="error" class="error-message"></p>
+        </div>
+        <!-- end of input field -->
+        <button class="hover:opacity-75 transition-all mb-3 custom-shadow-green uppercase text-white font-medium bg-green block w-full p-2 rounded" type="submit">claim your free trial</button>
+        <p class="md:text-xs text-xxs text-blue-200">By clicking the button, you are agreeing to our <a class="text-red font-medium" href="/">Terms and Services</a></p>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
