@@ -1033,36 +1033,6 @@ video {
           text-decoration-line: underline;
 }
 
-.placeholder-blue-300::-moz-placeholder{
-  --tw-placeholder-opacity: 1;
-  color: hsl(249 10% 26% / var(--tw-placeholder-opacity));
-}
-
-.placeholder-blue-300:-ms-input-placeholder{
-  --tw-placeholder-opacity: 1;
-  color: hsl(249 10% 26% / var(--tw-placeholder-opacity));
-}
-
-.placeholder-blue-300::placeholder{
-  --tw-placeholder-opacity: 1;
-  color: hsl(249 10% 26% / var(--tw-placeholder-opacity));
-}
-
-.placeholder-red::-moz-placeholder{
-  --tw-placeholder-opacity: 1;
-  color: hsl(0 100% 74% / var(--tw-placeholder-opacity));
-}
-
-.placeholder-red:-ms-input-placeholder{
-  --tw-placeholder-opacity: 1;
-  color: hsl(0 100% 74% / var(--tw-placeholder-opacity));
-}
-
-.placeholder-red::placeholder{
-  --tw-placeholder-opacity: 1;
-  color: hsl(0 100% 74% / var(--tw-placeholder-opacity));
-}
-
 .caret-blue-100{
   caret-color: hsl(248, 32%, 49%);
 }

@@ -1,6 +1,5 @@
 /* CODED BY: JEFFREY TUASON */
 
-
 const form = document.querySelector('#form');
 const inputFields = document.querySelectorAll('#input-fields');
 
@@ -15,6 +14,9 @@ const validateFieldOnType = () => {
         const container = field.querySelector('.input-container');
         const input = field.querySelector('input');
         const errorMessage = field.querySelector('#error');
+        const errorIcon = field.querySelector('#error-icon');
+        // console.log(errorIcon.classList.remove('hidden'));
+        console.log(errorIcon);
         // capitalize the first letter of the word
         const inputName = input.id.split('-');
         const arr = [];
@@ -28,9 +30,11 @@ const validateFieldOnType = () => {
                 if(input.value === '') {
                     container.classList.add('error-input-field')
                     errorMessage.textContent = `${word} cannot be empty`;
+                    errorIcon.classList.remove('hidden');
                 } else {
                     container.classList.remove('error-input-field')
                     errorMessage.textContent = '';
+                    errorIcon.classList.add('hidden');
                 }
             });
         } else {
@@ -40,6 +44,7 @@ const validateFieldOnType = () => {
             if(test) {
                     container.classList.remove('error-input-field');
                     errorMessage.textContent = '';
+                    errorIcon.classList.add('hidden');
                 }
             })
 
@@ -48,6 +53,7 @@ const validateFieldOnType = () => {
                 if(!test) {
                     container.classList.add('error-input-field')
                     errorMessage.textContent = 'Looks like this is not an email';
+                    errorIcon.classList.remove('hidden');
                 }
             })
         }
@@ -63,6 +69,7 @@ const onSubmitForm = (form) => {
         const container = field.querySelector('.input-container');
         const input = field.querySelector('input');
         const errorMessage = field.querySelector('#error');
+        const errorIcon = field.querySelector('#error-icon');
         // capitalize the first letter of the word
         const inputName = input.id.split('-');
         const arr = [];
@@ -74,19 +81,23 @@ const onSubmitForm = (form) => {
         if(input.value === '') {
             container.classList.add('error-input-field');
             errorMessage.textContent = `${word} cannot be empty`;
+            errorIcon.classList.remove('hidden');
         } else if (input.id === 'email') {
             const test = /^(\w+)(@[\w]+[\.][\w]{2,3})$/.test(input.value);
             if(test) {
                 container.classList.remove('error-input-field');
                 errorMessage.textContent = '';
+                errorIcon.classList.add('hidden');
                 switchForm++;
             } else {
                 container.classList.add('error-input-field');
                 errorMessage.textContent = 'Looks like this is not an email';
+                errorIcon.classList.remove('hidden');
             }
         } else {
             container.classList.remove('error-input-field');
             errorMessage.textContent = '';
+            errorIcon.classList.add('hidden');
             switchForm++;
         }
     })
